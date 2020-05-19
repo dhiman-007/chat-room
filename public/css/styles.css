@@ -8,6 +8,7 @@
 
 html {
     font-size: 16px;
+    
 }
 
 input {
@@ -15,8 +16,7 @@ input {
 }
 
 body {
-    line-height: 1.4;
-    color: #333333;
+  
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -40,7 +40,7 @@ input {
 button {
     cursor: pointer;
     padding: 12px;
-    background: #7C5CBF;
+    background: black;
     border: none;
     color: white;
     font-size: 16px;
@@ -59,7 +59,7 @@ button:disabled {
 /* Join Page Styles */
 
 .centered-form {
-    background: #333744;
+    background-image: url('../img/chat-min.jpg');
     width: 100vw;
     height: 100vh;   
     display: flex;
@@ -68,8 +68,8 @@ button:disabled {
 }
 
 .centered-form__box {
-    box-shadow: 0px 0px 17px 1px #1D1F26;
-    background: #F7F7FA;
+    box-shadow: 10px 11px 10px 11px #1D1F26;
+    background: #bbd1ed;
     padding: 24px;
     width: 250px;
 }
@@ -83,8 +83,6 @@ button:disabled {
     width: 100%;
 }
 
-/* Chat Page Layout */
-
 .chat {
     display: flex;
 }
@@ -93,7 +91,8 @@ button:disabled {
     height: 100vh;
     color: white;
     background: #333744;
-    width: 225px;
+    width: 250px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-y: scroll
 }
 
@@ -146,6 +145,7 @@ button:disabled {
     display: flex;
     flex-grow: 1;
     margin-right: 16px;
+    border: 3px #787a76;
 }
 
 .compose input {
@@ -181,3 +181,5 @@ button:disabled {
     font-weight: 300;
     padding: 12px 24px 0 24px;
 }
+
+
