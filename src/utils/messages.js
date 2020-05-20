@@ -8,7 +8,7 @@ const generateMessage =(username , text)=>{
 }
 
 const generateLocationMessage= (username,url)=>{
-            return {
+        return {
         username,
         url,
         createdAt: new Date().getTime()

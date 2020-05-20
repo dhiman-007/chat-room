@@ -38,10 +38,12 @@ const autoscroll = () => {
     }
 }
 
+//here message as a object 
 
 socket.on('message', (message) => {
-    console.log(message)
-    const html = Mustache.render(messageTemplate, {
+    console.log(message) // a object contains three properties resturned from generateMesage Function
+    //Mustache to render dynaimic temolates or messages
+      const html = Mustache.render(messageTemplate, {
       username: message.username,
        message: message.text,
        createdAt: moment(message.createdAt).format('h:mm a')
@@ -72,7 +74,7 @@ socket.on('roomData', ({ room, users }) => {
     document.querySelector('#sidebar').innerHTML = html
 })
 
-
+// client will sub,it form and it starts all from here
 $messageForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
